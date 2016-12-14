@@ -1,5 +1,5 @@
---temp-output:C:\Users\ataulhayezafarahmad\Documents\Visual Studio 2015\Projects\HeaderValidatorApp\src\HeaderValidatorDemoApplication\obj\Debug\netcoreapp1.0\
---out:C:\Users\ataulhayezafarahmad\Documents\Visual Studio 2015\Projects\HeaderValidatorApp\src\HeaderValidatorDemoApplication\bin\Debug\netcoreapp1.0\HeaderValidatorDemoApplication.dll
+--temp-output:C:\Users\ataulhayezafarahmad\Source\Repos\HeaderValidator\HeaderValidatorApp\src\HeaderValidatorDemoApplication\obj\Debug\netcoreapp1.0\
+--out:C:\Users\ataulhayezafarahmad\Source\Repos\HeaderValidator\HeaderValidatorApp\src\HeaderValidatorDemoApplication\bin\Debug\netcoreapp1.0\HeaderValidatorDemoApplication.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -196,8 +196,8 @@
 --reference:C:\Users\ataulhayezafarahmad\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\ataulhayezafarahmad\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\ataulhayezafarahmad\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---reference:C:\Users\ataulhayezafarahmad\Documents\Visual Studio 2015\Projects\HeaderValidatorApp\src\HeaderValidatorMiddleware\bin\Debug\netstandard1.6\HeaderValidatorMiddleware.dll
---resource:"C:\Users\ataulhayezafarahmad\Documents\Visual Studio 2015\Projects\HeaderValidatorApp\src\HeaderValidatorDemoApplication\obj\Debug\netcoreapp1.0\HeaderValidatorDemoApplicationdotnet-compile.deps.json",HeaderValidatorDemoApplication.deps.json
-C:\Users\ataulhayezafarahmad\Documents\Visual Studio 2015\Projects\HeaderValidatorApp\src\HeaderValidatorDemoApplication\Program.cs
-C:\Users\ataulhayezafarahmad\Documents\Visual Studio 2015\Projects\HeaderValidatorApp\src\HeaderValidatorDemoApplication\Startup.cs
-C:\Users\ataulhayezafarahmad\Documents\Visual Studio 2015\Projects\HeaderValidatorApp\src\HeaderValidatorDemoApplication\Controllers\HomeController.cs
+--reference:C:\Users\ataulhayezafarahmad\Source\Repos\HeaderValidator\HeaderValidatorApp\src\HeaderValidatorMiddleware\bin\Debug\netstandard1.6\HeaderValidatorMiddleware.dll
+--resource:"C:\Users\ataulhayezafarahmad\Source\Repos\HeaderValidator\HeaderValidatorApp\src\HeaderValidatorDemoApplication\obj\Debug\netcoreapp1.0\HeaderValidatorDemoApplicationdotnet-compile.deps.json",HeaderValidatorDemoApplication.deps.json
+C:\Users\ataulhayezafarahmad\Source\Repos\HeaderValidator\HeaderValidatorApp\src\HeaderValidatorDemoApplication\Program.cs
+C:\Users\ataulhayezafarahmad\Source\Repos\HeaderValidator\HeaderValidatorApp\src\HeaderValidatorDemoApplication\Startup.cs
+C:\Users\ataulhayezafarahmad\Source\Repos\HeaderValidator\HeaderValidatorApp\src\HeaderValidatorDemoApplication\Controllers\HomeController.cs

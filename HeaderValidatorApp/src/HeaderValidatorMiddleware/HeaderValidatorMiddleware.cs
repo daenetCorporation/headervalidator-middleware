@@ -17,7 +17,7 @@ namespace Misp.MessageRouterService
         /// </summary>
         /// <param name="app"></param>
         /// <param name="options"></param>
-        public static void UseHeaderValidator(
+        public static void UseHeaderValidatorMiddleware(
             this IApplicationBuilder app, HeaderValidatorOptions options = null)
         {
             if (options == null)

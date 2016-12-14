@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Misp.MessageRouterService;
+using System;
+using System.Collections.Generic;
 
 namespace HeaderValidatorDemoApplication
 {
@@ -38,13 +38,14 @@ namespace HeaderValidatorDemoApplication
             services.AddMvc();
         }
 
-        private HeaderValidatorOptions getHeaderValidatorCfg()
+        //private HeaderValidatorOptions getHeaderValidatorMiddlewareCfg()
+            private HeaderValidatorOptions getHeaderValidatorCfg()
         {
             HeaderValidatorOptions options = new HeaderValidatorOptions();
 
             try
             {
-                var headerValidatorSection = Configuration.GetSection("HeaderValidator");
+                var headerValidatorSection = Configuration.GetSection("HeaderValidatorMiddleware");
 
                 if (headerValidatorSection == null)
                     return options;
@@ -66,7 +67,7 @@ namespace HeaderValidatorDemoApplication
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure (IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
@@ -86,9 +87,9 @@ namespace HeaderValidatorDemoApplication
             app.UseApplicationInsightsExceptionTelemetry();
 
             app.UseStaticFiles();
+          
             var options = getHeaderValidatorCfg();
-            app.UseHeaderValidator(options);
-
+            app.UseHeaderValidatorMiddleware(options);
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
