@@ -1,2 +1,2 @@
 # headervalidator-middleware
-OWIN Middleware which checks request headers
+Header Validator validates the header in Hypertext Transfer Protocol
