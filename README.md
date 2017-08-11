@@ -1,6 +1,6 @@
 # Headervalidator-Middleware
 Header Validator validates the header in Hypertext Transfer Protocol
-# How to add Nugetpackage to the solution
+# How to add NuGet package to the solution
 Clone the project in the visual studio and then add the NuGet package to the solution.
 Build the solution and open the prompt window by navigating to your solution, then type the following command
 ```dotnet pack``` 
